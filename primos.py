@@ -6,9 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def primo():
-    print('-=' * 30)
-    print('= Os 100 Números Primos                                    =')
-    print('-=' * 30)
+
     co = 0
     for r in range(2, 548):
         c = 0
@@ -18,10 +16,6 @@ def primo():
         if c <= 2:
             print(r, end=' > ')
             co = co + 1
-    print('=-' * 25)
-    print('Essa é a contagem dos {} primeiros Primos'.format(co - 1))
-    print('=-' * 26)
-
     return co
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
