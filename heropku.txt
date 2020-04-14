@@ -1,0 +1,1 @@
+ heroku logs > log heroku.txt

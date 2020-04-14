@@ -1,0 +1,33 @@
+2020-04-14T00:46:11.856830+00:00 app[api]: Release v1 created by user izaiasn@hotmail.com
+2020-04-14T00:46:12.176258+00:00 app[api]: Enable Logplex by user izaiasn@hotmail.com
+2020-04-14T00:46:12.176258+00:00 app[api]: Release v2 created by user izaiasn@hotmail.com
+2020-04-14T00:46:11.856830+00:00 app[api]: Initial release by user izaiasn@hotmail.com
+2020-04-14T00:46:47.000000+00:00 app[api]: Build started by user izaiasn@hotmail.com
+2020-04-14T00:47:14.576356+00:00 app[api]: Deploy a13efeb2 by user izaiasn@hotmail.com
+2020-04-14T00:47:14.576356+00:00 app[api]: Release v3 created by user izaiasn@hotmail.com
+2020-04-14T00:47:14.596725+00:00 app[api]: Scaled to web@1:Free by user izaiasn@hotmail.com
+2020-04-14T00:47:21.563479+00:00 heroku[web.1]: State changed from starting to crashed
+2020-04-14T00:47:21.567970+00:00 heroku[web.1]: State changed from crashed to starting
+2020-04-14T00:47:21.459620+00:00 app[web.1]: Traceback (most recent call last):
+2020-04-14T00:47:21.459675+00:00 app[web.1]: File "primos.py", line 4, in <module>
+2020-04-14T00:47:21.459956+00:00 app[web.1]: app = Flask(_name_)
+2020-04-14T00:47:21.460043+00:00 app[web.1]: NameError: name '_name_' is not defined
+2020-04-14T00:47:23.000000+00:00 app[api]: Build succeeded
+2020-04-14T00:47:27.608000+00:00 heroku[web.1]: State changed from starting to crashed
+2020-04-14T00:47:27.467442+00:00 app[web.1]: Traceback (most recent call last):
+2020-04-14T00:47:27.467470+00:00 app[web.1]: File "primos.py", line 4, in <module>
+2020-04-14T00:47:27.467660+00:00 app[web.1]: app = Flask(_name_)
+2020-04-14T00:47:27.467704+00:00 app[web.1]: NameError: name '_name_' is not defined
+2020-04-14T00:47:58.189569+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=sleepy-cliffs-89478.herokuapp.com request_id=3f3b2e2e-b58f-4741-9f73-6a22cbcc868d fwd="191.183.198.206" dyno= connect= service= status=503 bytes= protocol=https
+2020-04-14T00:47:58.783325+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=sleepy-cliffs-89478.herokuapp.com request_id=9370795c-aeb4-48cf-87d6-aeb8c24d550c fwd="191.183.198.206" dyno= connect= service= status=503 bytes= protocol=https
+2020-04-14T01:03:21.000000+00:00 app[api]: Build started by user izaiasn@hotmail.com
+2020-04-14T01:03:50.395892+00:00 heroku[web.1]: State changed from crashed to starting
+2020-04-14T01:03:50.220462+00:00 app[api]: Release v4 created by user izaiasn@hotmail.com
+2020-04-14T01:03:50.220462+00:00 app[api]: Deploy e5b00558 by user izaiasn@hotmail.com
+2020-04-14T01:03:55.865703+00:00 heroku[web.1]: State changed from starting to up
+2020-04-14T01:03:55.588828+00:00 app[web.1]: * Running on http://0.0.0.0:39234/ (Press CTRL+C to quit)
+2020-04-14T01:03:58.000000+00:00 app[api]: Build succeeded
+2020-04-14T01:04:14.664695+00:00 heroku[router]: at=info method=GET path="/" host=sleepy-cliffs-89478.herokuapp.com request_id=517876c0-7371-49c6-94aa-04f8509e0fce fwd="191.183.198.206" dyno=web.1 connect=0ms service=4ms status=200 bytes=631 protocol=https
+2020-04-14T01:04:14.664153+00:00 app[web.1]: 10.101.144.240 - - [14/Apr/2020 01:04:14] "GET / HTTP/1.1" 200 -
+2020-04-14T01:04:14.973813+00:00 app[web.1]: 10.101.144.240 - - [14/Apr/2020 01:04:14] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-14T01:04:14.974532+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=sleepy-cliffs-89478.herokuapp.com request_id=5c4b54f6-46fb-49f3-97c4-75bd22839dce fwd="191.183.198.206" dyno=web.1 connect=0ms service=15ms status=404 bytes=380 protocol=https
