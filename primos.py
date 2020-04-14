@@ -1,23 +1,30 @@
 import os
 from flask import Flask, jsonify, request
-from math import sqrt
 
-app = Flask(__name__)
+app = Flask(_name_)
+
 
 @app.route('/')
-def primo():
+def func_primos():
 
-    co = 0
-    for r in range(2, 548):
-        c = 0
-        for v in range(1, r+1):
-            if r % v == 0:
-                c += 1
-        if c <= 2:
-            print(r, end=' > ')
-            co = co + 1
-    return co
-if __name__ == "__main__":
+    cont = 0
+    num = 2
+    lista = []
+    while (cont <= 100):
+        normal = False
+        for i in range(2, num):
+            if (num % i == 0):
+                normal = True
+                break
+        if (not normal):
+            cont += 1
+            lista.append(num)
+
+        num += 1
+
+    return str(lista)
+
+
+if _name_ == "_main_":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
